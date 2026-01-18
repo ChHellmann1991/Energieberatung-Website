@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kontaktieren Sie Energieberatung Hellmann für eine unverbindliche Erstberatung. Schreiben Sie mir – Antwort innerhalb von 24 Stunden.">
+    <title>Kontakt | Energieberatung Hellmann</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Energie Hellmann Logo" class="logo__image">
+                <span class="logo__text">Energie Hellmann</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav__link">Start</a>
+                <a href="leistungen.html" class="nav__link">Leistungen</a>
+                <a href="ueber-mich.html" class="nav__link">Über mich</a>
+                <a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a>
+                <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
+            </nav>
+            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h1>Kontakt aufnehmen</h1>
+                <p>Sie haben Fragen oder möchten einen Termin für eine Erstberatung vereinbaren? Schreiben Sie mir – ich
+                    melde mich in der Regel innerhalb von 24 Stunden bei Ihnen.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 400px; gap: 3rem; align-items: start;">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 style="margin-bottom: 1.5rem;">Nachricht senden</h2>
+
+                    <!-- Web3Forms - Replace YOUR_ACCESS_KEY with actual key from https://web3forms.com -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="e2e262ec-4af7-4dac-acbb-6a5d926ab78a">
+                        <input type="hidden" name="subject" value="Neue Anfrage von energie-hellmann.de">
+                        <input type="hidden" name="from_name" value="Energie Hellmann Website">
+                        <input type="hidden" name="redirect"
+                            value="https://energie-hellmann.de/kontakt.html?success=true">
+
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required
+                                placeholder="Ihr vollständiger Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-Mail *</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="ihre@email.de">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="tel" id="phone" name="phone" class="form-input"
+                                placeholder="Für Rückruf (optional)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reachability" class="form-label">Wann sind Sie am besten erreichbar?</label>
+                            <select id="reachability" name="reachability" class="form-select">
+                                <option value="">Bitte wählen...</option>
+                                <option value="morgens">Morgens (9-12 Uhr)</option>
+                                <option value="abends">Abends (ab 17 Uhr)</option>
+                                <option value="wochenende">Wochenende</option>
+                                <option value="jederzeit">Jederzeit</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Ihre Nachricht *</label>
+                            <textarea id="message" name="message" class="form-textarea" required
+                                placeholder="Beschreiben Sie kurz Ihr Anliegen oder Ihre Fragen..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="privacy" required>
+                                <span>Ich stimme der Verarbeitung meiner Daten gemäß der <a href="datenschutz.html"
+                                        target="_blank">Datenschutzerklärung</a> zu. *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--large" style="width: 100%;">
+                            Nachricht absenden
+                        </button>
+                    </form>
+
+                    <!-- Success Message (shown when redirected with ?success=true) -->
+                    <div id="successMessage"
+                        style="display: none; background: #d4edda; border: 1px solid #c3e6cb; color: #155724; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
+                        <strong>✓ Vielen Dank!</strong><br>
+                        Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich innerhalb von 24 Stunden bei Ihnen.
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <div
+                        style="background: var(--color-gray-100); padding: 2rem; border-radius: 16px; margin-bottom: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem;">Direkt kontaktieren</h3>
+
+                        <div class="contact-info">
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon">📧</div>
+                                <div>
+                                    <strong>E-Mail</strong><br>
+                                    <a href="mailto:kontakt@energie-hellmann.de">kontakt@energie-hellmann.de</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon">📞</div>
+                                <div>
+                                    <strong>Telefon</strong><br>
+                                    <a href="tel:+4915123307365">0151 23307365</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info__item">
+                                <div class="contact-info__icon">📍</div>
+                                <div>
+                                    <strong>Adresse</strong><br>
+                                    Christoph Hellmann<br>
+                                    Zeisigweg 17/2<br>
+                                    71032 Böblingen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: var(--color-accent); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--color-primary);">
+                        <p style="margin: 0;">
+                            <strong>💡 Hinweis:</strong> Als Ingenieur bin ich tagsüber oft in Projekten unterwegs.
+                            Bitte hinterlassen Sie eine Nachricht – ich rufe Sie <strong>garantiert ab 17:00
+                                Uhr</strong> zurück.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h4 class="footer__title">Energie Hellmann</h4>
+                <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
+            </div>
+            <div>
+                <h4 class="footer__title">Navigation</h4>
+                <a href="index.html" class="footer__link">Start</a>
+                <a href="leistungen.html" class="footer__link">Leistungen</a>
+                <a href="ueber-mich.html" class="footer__link">Über mich</a>
+                <a href="kontakt.html" class="footer__link">Kontakt</a>
+            </div>
+            <div>
+                <h4 class="footer__title">Kontakt</h4>
+                <p>Christoph Hellmann<br>Zeisigweg 17/2<br>71032 Böblingen</p>
+                <p class="mt-2">
+                    <a href="tel:+4915123307365" class="footer__link">📞 0151 23307365</a>
+                    <a href="mailto:kontakt@energie-hellmann.de" class="footer__link">📧 kontakt@energie-hellmann.de</a>
+                </p>
+            </div>
+            <div>
+                <h4 class="footer__title">Rechtliches</h4>
+                <a href="impressum.html" class="footer__link">Impressum</a>
+                <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Christoph Hellmann – Energieberatung. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Check for success parameter
+        if (window.location.search.includes('success=true')) {
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('contactForm').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
