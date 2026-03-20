@@ -633,6 +633,21 @@ p {
   margin-top: 4px;
 }
 
+/* Contact & Service Grids */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
 /* Contact Info */
 .contact-info {
   display: flex;
@@ -824,6 +839,18 @@ p {
   .footer__container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .price-box {
+    max-width: 100%;
   }
 }
 
