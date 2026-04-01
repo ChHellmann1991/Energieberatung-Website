@@ -66,4 +66,4 @@ website/
 - [ ] IONOS DNS-Einträge gesetzt (Propagation: 24-48h)
 - [ ] HTTPS aktiviert
 - [ ] Alle Links getestet
-- [ ] Kontaktformular getestet
+- [ ] Kontaktformular getestet 
