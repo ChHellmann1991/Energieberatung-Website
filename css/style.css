@@ -574,6 +574,9 @@ p {
   padding: var(--spacing-sm);
   background: var(--color-gray-100);
   border-radius: var(--border-radius);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .profile__qualification-icon {
