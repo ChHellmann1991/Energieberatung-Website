@@ -401,6 +401,18 @@ p {
   gap: var(--spacing-lg);
 }
 
+@media (min-width: 992px) {
+  .features--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .features--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .feature-card {
   background: var(--color-white);
   padding: var(--spacing-lg);
