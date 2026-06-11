@@ -884,14 +884,30 @@ p {
   }
 }
 
-/* Dena Logo Styles */
-.dena-logo-badge {
+/* Dena & GIH Logo Styles */
+.dena-logo-badge,
+.gih-logo-badge {
   background: var(--color-white);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius);
   max-width: 200px;
   display: inline-block;
   box-shadow: var(--shadow-sm);
+}
+
+.footer__logos {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__logos .dena-logo-badge,
+.footer__logos .gih-logo-badge {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  padding: var(--spacing-xs) var(--spacing-sm);
 }
 
 .dena-logo-inline {
