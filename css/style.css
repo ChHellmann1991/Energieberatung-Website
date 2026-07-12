@@ -194,6 +194,25 @@ p {
   gap: var(--spacing-sm);
 }
 
+/* Skip Link (Barrierefreiheit) */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: var(--spacing-sm);
+  z-index: 1000;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: var(--spacing-sm);
+}
+
 .logo__image {
   height: 50px;
   width: auto;

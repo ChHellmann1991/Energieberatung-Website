@@ -38,11 +38,12 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
   <!-- Header -->
   <header class="header">
     <div class="container header__container">
       <a href="index.html" class="logo">
-        <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image">
+        <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="1024" height="1024">
         <span class="logo__text">Ingenieurbüro Hellmann</span>
       </a>
       <nav class="nav" id="nav">
@@ -53,7 +54,7 @@
         <a href="kontakt.html" class="nav__link">Kontakt</a>
         <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+      <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -62,10 +63,10 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="main-content">
     <div class="container hero__container">
       <div class="hero__content">
-        <span class="hero__badge">🏠 Energieeffizienz-Experte</span>
+        <span class="hero__badge"><span aria-hidden="true">🏠</span> Energieeffizienz-Experte</span>
         <h1 class="hero__title">
           Energieberatung für <span>Böblingen & Umgebung</span>
         </h1>
@@ -79,7 +80,7 @@
         </div>
       </div>
       <div class="hero__image">
-        <img src="images/hero.png" alt="Energetisch saniertes Einfamilienhaus mit Wärmepumpe und Solaranlage">
+        <img src="images/hero.png" alt="Energetisch saniertes Einfamilienhaus mit Wärmepumpe und Solaranlage" width="1024" height="1024">
       </div>
     </div>
   </section>
@@ -88,17 +89,17 @@
   <section class="trust-bar">
     <div class="container trust-bar__container">
       <div class="trust-bar__item">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </svg>
         <span>Ingenieur (B.Eng. / M.A.)</span>
       </div>
       <div class="trust-bar__item">
-        <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="height: 30px; margin-right: 5px;">
+        <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="height: 30px; margin-right: 5px;" width="965" height="234" loading="lazy">
         <span>dena-gelistet</span>
       </div>
       <div class="trust-bar__item">
-        <img src="images/gih_logo.png" alt="GIH Bundesverband e.V." style="height: 30px; margin-right: 5px;">
+        <img src="images/gih_logo.png" alt="GIH Bundesverband e.V." style="height: 30px; margin-right: 5px;" width="1500" height="568" loading="lazy">
         <span>Mitglied im GIH Bundesverband e.V.</span>
       </div>
       <div class="trust-bar__item">
@@ -122,7 +123,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg);">
         <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; text-align: left; padding: var(--spacing-xl); background: var(--color-white);">
           <div>
-            <h3 style="margin-bottom: var(--spacing-sm); color: var(--Color-primary);">Für Eigentümer</h3>
+            <h3 style="margin-bottom: var(--spacing-sm); color: var(--color-primary);">Für Eigentümer</h3>
             <p style="margin-bottom: var(--spacing-md); font-weight: 600;">Sie planen eine neue Heizung oder eine Sanierung?</p>
             <p style="color: var(--color-gray-600); font-size: var(--font-size-sm); margin-bottom: var(--spacing-lg);">
               Von der Heizlastberechnung für Ihre Wärmepumpe bis zum kompletten Sanierungsfahrplan: Ich liefere die technische Grundlage und kümmere mich um die Fördernachweise.
@@ -153,30 +154,30 @@
       </div>
       <div class="features features--3-cols">
         <div class="feature-card">
-          <div class="feature-card__icon">⚡</div>
+          <div class="feature-card__icon" aria-hidden="true">⚡</div>
           <h3 class="feature-card__title">Digital & effizient</h3>
           <p class="feature-card__text">Laser-Aufmaß und durchgängig digitale Bearbeitung – Sie erhalten ein Angebot innerhalb von 2 Werktagen und einen verbindlichen Liefertermin für Ihren Bericht.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🎯</div>
+          <div class="feature-card__icon" aria-hidden="true">🎯</div>
           <h3 class="feature-card__title">Wohngebäude & Handwerk</h3>
           <p class="feature-card__text">Individuelle Sanierungsfahrpläne für Wohngebäude – sowie technische Zuarbeit (Heizlast, Abgleich, Förderung) für Handwerksbetriebe.</p>
         </div>
         <div class="feature-card">
           <div class="feature-card__icon" style="background: transparent; margin-bottom: var(--spacing-sm);">
-            <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="max-height: 50px;">
+            <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="max-height: 50px;" width="965" height="234" loading="lazy">
           </div>
           <h3 class="feature-card__title">dena-gelistet (EEE)</h3>
           <p class="feature-card__text">Eingetragen in der Energieeffizienz-Expertenliste des Bundes für Wohngebäude.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">💰</div>
+          <div class="feature-card__icon" aria-hidden="true">💰</div>
           <h3 class="feature-card__title">iSFP-Zuschuss</h3>
           <p class="feature-card__text">Bis zu 650 € Zuschuss – das BAFA fördert den Sanierungsfahrplan mit einem festen Zuschuss, den Sie direkt erhalten.</p>
         </div>
         <div class="feature-card" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
           <div>
-            <div class="feature-card__icon">🤝</div>
+            <div class="feature-card__icon" aria-hidden="true">🤝</div>
             <h3 class="feature-card__title">Partner des Handwerks</h3>
             <p class="feature-card__text">Heizungsbauer, Dachdecker & Fensterbauer: Ich liefere iSFP, Heizlast und hydraulischen Abgleich – fördersicher und termintreu.</p>
           </div>
@@ -185,7 +186,7 @@
           </div>
         </div>
         <div class="feature-card">
-          <div class="feature-card__icon">🔍</div>
+          <div class="feature-card__icon" aria-hidden="true">🔍</div>
           <h3 class="feature-card__title">Unabhängig & Neutral</h3>
           <p class="feature-card__text">Als freies Ingenieurbüro vertrete ich ausschließlich Ihre Interessen – zu 100 % hersteller- und produktneutral.</p>
         </div>
@@ -249,8 +250,8 @@
         <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
         <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
         <div class="footer__logos mt-2">
-          <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge">
-          <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge">
+          <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="965" height="234" loading="lazy">
+          <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="1500" height="568" loading="lazy">
         </div>
       </div>
       <div>

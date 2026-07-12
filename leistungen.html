@@ -82,11 +82,12 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="logo">
-                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image">
+                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="1024" height="1024">
                 <span class="logo__text">Ingenieurbüro Hellmann</span>
             </a>
             <nav class="nav" id="nav">
@@ -97,14 +98,14 @@
                 <a href="kontakt.html" class="nav__link">Kontakt</a>
                 <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
             </nav>
-            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
-    <section class="section" style="padding-top: 120px; padding-bottom: var(--spacing-xl);">
+    <section class="section" id="main-content" style="padding-top: 120px; padding-bottom: var(--spacing-xl);">
         <div class="container">
             <div class="section-header" style="max-width: 800px;">
                 <h1>Meine Leistungen für Ihre Immobilie</h1>
@@ -121,7 +122,7 @@
         <div class="container">
             <div class="service-grid">
                 <div>
-                    <span class="hero__badge" style="background: var(--color-primary-light); margin-bottom: var(--spacing-sm);">🏆 Meistgebuchte Leistung</span>
+                    <span class="hero__badge" style="background: var(--color-primary-light); margin-bottom: var(--spacing-sm);"><span aria-hidden="true">🏆</span> Meistgebuchte Leistung</span>
                     <h2>Heizungstausch-Paket: Heizlast, hydraulischer Abgleich & Förderservice</h2>
                     <p style="font-size: 1.1rem; margin-top: 1rem; margin-bottom: 1.5rem;">
                         Sie planen eine Wärmepumpe oder eine neue Heizung? Dann brauchen Sie zwei Dinge: eine Anlage, die richtig dimensioniert ist – und die vollständigen Nachweise für die [...]
@@ -130,19 +131,19 @@
                     <h3 style="margin-bottom: 1rem;">Das Paket enthält:</h3>
                     <ul style="list-style: none; padding: 0;">
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Raumweise Heizlastberechnung nach DIN EN 12831</strong> – die Grundlage für die richtige Dimensionierung Ihrer Wärmepumpe. Pauschal übernommene Kessel[...]
                             </div>
                         </li>
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Hydraulischer Abgleich nach Verfahren B</strong> – rechnerische Einstellung aller Heizkörper bzw. Heizkreise, damit die Wärme dort ankommt, wo sie gebr[...]
                             </div>
                         </li>
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>KfW-Förderservice</strong> – ich erstelle die Bestätigung zum Antrag (BzA) und begleite Sie Schritt für Schritt durch Ihren Antrag im Portal „Meine [...]
                             </div>
@@ -198,13 +199,13 @@
                     <h3 style="margin-bottom: 1rem;">Was der iSFP finanziell bringt – konkret:</h3>
                     <ul style="list-style: none; padding: 0;">
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>+5 Prozentpunkte Förderbonus</strong> auf Maßnahmen an der Gebäudehülle (Dämmung, Fenster, Türen, Dach) ab einem förderfähigen Investitionsvolumen [...]
                             </div>
                         </li>
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Doppelte Förderobergrenze:</strong> Mit iSFP sind pro Wohneinheit und Jahr 60.000 € statt 30.000 € an Kosten förderfähig. Bei größeren Sanierungen[...]
                             </div>
@@ -277,19 +278,19 @@
                     <h3 style="margin-bottom: 1rem;">Wichtig für Ihr Vorhaben:</h3>
                     <ul style="list-style: none; padding: 0;">
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Der Staat beteiligt sich zur Hälfte:</strong> Die Kosten für Fachplanung und Baubegleitung werden mit 50 % bezuschusst (förderfähig bis 5.000 € beim [...]
                             </div>
                         </li>
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Rechtzeitige Beantragung:</strong> Der Förderantrag beim BAFA muss <strong>vor</strong> der Auftragsvergabe an den Handwerksbetrieb gestellt werden. Das A[...]
                             </div>
                         </li>
                         <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                            <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                             <div>
                                 <strong>Auch bei Eigenleistung:</strong> Sie dämmen selbst? Auch Eigenleistungen sind über die Bundesförderung (BEG) förderfähig – die Materialkosten werden[...]
                             </div>
@@ -338,7 +339,7 @@
             <div class="features features--3-cols" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
                 <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
-                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">🔥</div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">🔥</div>
                         <h4 style="margin-bottom: var(--spacing-xs);">Heizlastberechnung (DIN EN 12831)</h4>
                         <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Raumweise Berechnung als Grundlage für Wärmepumpen-Auslegung oder Heizkörper-Tausch.</p>
                     </div>
@@ -346,7 +347,7 @@
                 </div>
                 <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
-                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">⚙️</div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">⚙️</div>
                         <h4 style="margin-bottom: var(--spacing-xs);">Hydraulischer Abgleich (Verfahren B)</h4>
                         <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Rechnerischer Abgleich aller Heizflächen inkl. Einstellwerten für den Installateur.</p>
                     </div>
@@ -354,7 +355,7 @@
                 </div>
                 <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
-                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">💨</div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">💨</div>
                         <h4 style="margin-bottom: var(--spacing-xs);">Lüftungskonzept (DIN 1946-6)</h4>
                         <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Pflichtnachweis bei vielen Fenstertausch- und Dämmvorhaben: Prüfung, ob und wie zusätzliche Lü[...]
                     </div>
@@ -362,7 +363,7 @@
                 </div>
                 <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
-                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);">📋</div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">📋</div>
                         <h4 style="margin-bottom: var(--spacing-xs);">Förderservice (BAFA/KfW)</h4>
                         <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Antragsbegleitung als Einzelleistung, wenn keine weiteren Berechnungen nötig sind.</p>
                     </div>
@@ -542,8 +543,8 @@
                 <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
                 <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
                 <div class="footer__logos mt-2">
-                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge">
-                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge">
+                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="965" height="234" loading="lazy">
+                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="1500" height="568" loading="lazy">
                 </div>
             </div>
             <div>

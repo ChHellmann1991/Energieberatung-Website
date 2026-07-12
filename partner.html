@@ -18,11 +18,12 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="logo">
-                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image">
+                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="1024" height="1024">
                 <span class="logo__text">Ingenieurbüro Hellmann</span>
             </a>
             <nav class="nav" id="nav">
@@ -33,7 +34,7 @@
                 <a href="kontakt.html" class="nav__link">Kontakt</a>
                 <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
             </nav>
-            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,7 +43,7 @@
     </header>
 
     <!-- Page Header / Hero -->
-    <section class="section" style="padding-top: 120px; padding-bottom: var(--spacing-xl);">
+    <section class="section" id="main-content" style="padding-top: 120px; padding-bottom: var(--spacing-xl);">
         <div class="container">
             <div class="section-header" style="max-width: 800px;">
                 <h1>Zusammenarbeit für Handwerksbetriebe</h1>
@@ -67,19 +68,19 @@
                 </p>
                 <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Raumweise Heizlastberechnung nach DIN EN 12831</strong> – korrekte Dimensionierung, dokumentiert für die Förderung.
                         </div>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Hydraulischer Abgleich nach Verfahren B</strong> – inkl. Einstellwerten für Ihre Monteure.
                         </div>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Bestätigung zum Antrag (BzA)</strong> – für die KfW-Heizungsförderung und Begleitung Ihres Kunden durch den Antrag.
                         </div>
@@ -105,19 +106,19 @@
                 </p>
                 <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Sanierungsfahrplan (iSFP):</strong> bringt +5 Prozentpunkte Förderung auf Ihre Maßnahme (ab 30.000 € förderfähigem Investitionsvolumen) und verdoppelt die förderfähige Kostenobergrenze auf 60.000 € pro Wohneinheit und Jahr – Ihr Angebot wird für den Kunden spürbar günstiger, ohne dass Sie am Preis drehen.
                         </div>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Fachplanung & Baubegleitung:</strong> der für die Förderung vorgeschriebene Experten-Part, zu 50 % bezuschusst.
                         </div>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1rem;">
-                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;">✓</span>
+                        <span style="color: var(--color-primary); font-size: 1.5rem; line-height: 1;" aria-hidden="true">✓</span>
                         <div>
                             <strong>Lüftungskonzept nach DIN 1946-6:</strong> der Pflichtnachweis beim Fenstertausch, den viele vergessen – bei mir Standard.
                         </div>
@@ -208,8 +209,8 @@
                 <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
                 <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
                 <div class="footer__logos mt-2">
-                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge">
-                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge">
+                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="965" height="234" loading="lazy">
+                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="1500" height="568" loading="lazy">
                 </div>
             </div>
             <div>

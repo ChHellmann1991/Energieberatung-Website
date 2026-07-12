@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (navToggle && nav) {
         navToggle.addEventListener('click', function () {
-            nav.classList.toggle('nav--open');
+            const isOpen = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 
             // Animate hamburger icon
             const spans = navToggle.querySelectorAll('span');
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks.forEach(link => {
             link.addEventListener('click', function () {
                 nav.classList.remove('nav--open');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
 
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('click', function (e) {
             if (!nav.contains(e.target) && !navToggle.contains(e.target)) {
                 nav.classList.remove('nav--open');
+                navToggle.setAttribute('aria-expanded', 'false');
             }
         });
     }

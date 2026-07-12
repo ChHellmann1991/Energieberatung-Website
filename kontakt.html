@@ -19,11 +19,12 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
             <a href="index.html" class="logo">
-                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image">
+                <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="1024" height="1024">
                 <span class="logo__text">Ingenieurbüro Hellmann</span>
             </a>
             <nav class="nav" id="nav">
@@ -34,7 +35,7 @@
                 <a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a>
                 <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
             </nav>
-            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,7 +44,7 @@
     </header>
 
     <!-- Contact Section -->
-    <section class="section" style="padding-top: 120px;">
+    <section class="section" id="main-content" style="padding-top: 120px;">
         <div class="container">
             <div class="section-header">
                 <h1>Kontakt aufnehmen</h1>
@@ -144,7 +145,7 @@
 
                         <div class="contact-info">
                             <div class="contact-info__item">
-                                <div class="contact-info__icon">📧</div>
+                                <div class="contact-info__icon" aria-hidden="true">📧</div>
                                 <div>
                                     <strong>E-Mail</strong><br>
                                     <a href="mailto:kontakt@energie-hellmann.de">kontakt@energie-hellmann.de</a>
@@ -152,7 +153,7 @@
                             </div>
 
                             <div class="contact-info__item">
-                                <div class="contact-info__icon">📞</div>
+                                <div class="contact-info__icon" aria-hidden="true">📞</div>
                                 <div>
                                     <strong>Telefon</strong><br>
                                     <a href="tel:+4915203826121">0152 / 038 26 121</a>
@@ -160,7 +161,7 @@
                             </div>
 
                             <div class="contact-info__item">
-                                <div class="contact-info__icon">💬</div>
+                                <div class="contact-info__icon" aria-hidden="true">💬</div>
                                 <div>
                                     <strong>WhatsApp</strong><br>
                                     <a href="https://wa.me/4915203826121" target="_blank">0152 / 038 26 121</a>
@@ -168,7 +169,7 @@
                             </div>
 
                             <div class="contact-info__item">
-                                <div class="contact-info__icon">📍</div>
+                                <div class="contact-info__icon" aria-hidden="true">📍</div>
                                 <div>
                                     <strong>Adresse</strong><br>
                                     Christoph Hellmann<br>
@@ -197,8 +198,8 @@
                 <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
                 <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
                 <div class="footer__logos mt-2">
-                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge">
-                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge">
+                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="965" height="234" loading="lazy">
+                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="1500" height="568" loading="lazy">
                 </div>
             </div>
             <div>
