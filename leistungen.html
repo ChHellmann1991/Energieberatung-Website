@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Heizungstausch-Paket (Heizlast + hydraulischer Abgleich + KfW-Service), individueller Sanierungsfahrplan und Baubegleitung – Festpreise, transparent inkl. Förderung.">
+        content="Heizungstausch-Paket (Heizlast + hydraulischer Abgleich + KfW-Service), individueller Sanierungsfahrplan, Baubegleitung und Energieausweise – Festpreise, transparent inkl. Förderung.">
     <meta property="og:title" content="Leistungen & Preise | Ingenieurbüro Hellmann Böblingen">
-    <meta property="og:description" content="Heizungstausch-Paket (Heizlast + hydraulischer Abgleich + KfW-Service), individueller Sanierungsfahrplan (iSFP) und Baubegleitung zum Festpreis.">
+    <meta property="og:description" content="Heizungstausch-Paket (Heizlast + hydraulischer Abgleich + KfW-Service), individueller Sanierungsfahrplan (iSFP), Baubegleitung und Energieausweise zum Festpreis.">
     <meta property="og:image" content="https://www.energie-hellmann.de/images/hero.png">
     <meta property="og:url" content="https://www.energie-hellmann.de/leistungen.html">
     <meta property="og:type" content="website">
@@ -376,8 +376,39 @@
         </div>
     </section>
 
+    <!-- Energieausweis -->
+    <section class="section section--gray" id="energieausweis">
+        <div class="container">
+            <div class="section-header">
+                <h2>Energieausweis</h2>
+                <p>Für Verkauf und Vermietung gesetzlich vorgeschrieben – vom dena-gelisteten Experten statt vom anonymen Online-Portal.</p>
+            </div>
+            <div class="features features--3-cols" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">📊</div>
+                        <h4 style="margin-bottom: var(--spacing-xs);">Verbrauchsausweis</h4>
+                        <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Auf Basis Ihrer Heizkostenabrechnungen der letzten 3 Jahre. Komplett digital ohne Vor-Ort-Termin, inkl. Plausibilitätsprüfung – in der Regel in 3 Werktagen.</p>
+                    </div>
+                    <strong style="margin-top: var(--spacing-sm); color: var(--color-primary);">EFH 169 € · ZFH 199 € · MFH ab 299 €</strong>
+                </div>
+                <div class="feature-card" style="text-align: left; padding: var(--spacing-md); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="font-size: 1.5rem; margin-bottom: var(--spacing-xs);" aria-hidden="true">🏠</div>
+                        <h4 style="margin-bottom: var(--spacing-xs);">Bedarfsausweis</h4>
+                        <p style="color: var(--color-gray-600); font-size: var(--font-size-sm);">Technische Gebäudeanalyse vor Ort, unabhängig vom Nutzerverhalten. Nötig ohne 3 Jahre Verbrauchsdaten – und deutlich aussagekräftiger.</p>
+                    </div>
+                    <strong style="margin-top: var(--spacing-sm); color: var(--color-primary);">490 € · im Paket mit iSFP nur 190 €</strong>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="energieausweis.html" class="btn btn--primary">Alle Details & Ablauf zum Energieausweis</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Preistabelle -->
-    <section class="section section--gray" id="preise">
+    <section class="section" id="preise">
         <div class="container">
             <div class="section-header">
                 <h2>Preise im Überblick</h2>
@@ -436,6 +467,18 @@
                             <td style="padding: 1rem;">–</td>
                             <td style="padding: 1rem;">250 €</td>
                         </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-200);">
+                            <td style="padding: 1rem;"><strong>Energieausweis (Verbrauch)</strong><br><span style="font-size: 0.85rem; color: var(--color-gray-600);">EFH 169 € · ZFH 199 € · MFH ab 299 € – <a href="energieausweis.html">Details</a></span></td>
+                            <td style="padding: 1rem;">ab 169 €</td>
+                            <td style="padding: 1rem;">–</td>
+                            <td style="padding: 1rem;">ab 169 €</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--color-gray-200);">
+                            <td style="padding: 1rem;"><strong>Energieausweis (Bedarf)</strong><br><span style="font-size: 0.85rem; color: var(--color-gray-600);">im Paket mit iSFP nur 190 €</span></td>
+                            <td style="padding: 1rem;">490 €</td>
+                            <td style="padding: 1rem;">–</td>
+                            <td style="padding: 1rem;">490 €</td>
+                        </tr>
                         <tr>
                             <td style="padding: 1rem;"><strong>Förderservice pro Antrag</strong></td>
                             <td style="padding: 1rem;">280 €</td>
@@ -452,7 +495,7 @@
     </section>
 
     <!-- Process / Ablauf -->
-    <section class="section" id="ablauf">
+    <section class="section section--gray" id="ablauf">
         <div class="container">
             <div class="section-header">
                 <h2>Wie es funktioniert</h2>
@@ -490,7 +533,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section section--gray" id="faq">
+    <section class="section" id="faq">
         <div class="container">
             <div class="section-header">
                 <h2>Häufige Fragen</h2>
