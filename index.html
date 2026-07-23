@@ -9,30 +9,117 @@
   <meta name="author" content="Christoph Hellmann">
   <meta property="og:title" content="Ingenieurbüro Hellmann | Energieberatung Böblingen">
   <meta property="og:description" content="Unabhängige Energieberatung in Böblingen: Heizlastberechnung, hydraulischer Abgleich, iSFP und Baubegleitung.">
-  <meta property="og:image" content="https://www.energie-hellmann.de/images/hero.png">
+  <meta property="og:image" content="https://www.energie-hellmann.de/images/hero.jpg">
   <meta property="og:url" content="https://www.energie-hellmann.de/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://www.energie-hellmann.de/">
   <title>Ingenieurbüro Hellmann | Energieberatung Böblingen – Heizlast, iSFP, Baubegleitung</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="images/logo_weiß.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://www.energie-hellmann.de/#organization",
     "name": "Ingenieurbüro Hellmann",
+    "alternateName": "Energie-Hellmann",
     "description": "Unabhängige Energieberatung in Böblingen: Heizlastberechnung, hydraulischer Abgleich, individueller Sanierungsfahrplan (iSFP) und Baubegleitung.",
     "url": "https://www.energie-hellmann.de",
     "email": "kontakt@energie-hellmann.de",
+    "telephone": "+4915203826121",
+    "image": "https://www.energie-hellmann.de/images/hero.jpg",
+    "logo": "https://www.energie-hellmann.de/images/logo-weiss.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Zeisigweg 17/2",
       "postalCode": "71032",
       "addressLocality": "Böblingen",
+      "addressRegion": "Baden-Württemberg",
       "addressCountry": "DE"
     },
-    "areaServed": ["Böblingen", "Sindelfingen", "Landkreis Böblingen"],
-    "priceRange": "€€"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.6800833,
+      "longitude": 9.0369462
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Christoph Hellmann",
+      "jobTitle": "Energieberater (dena-gelistet, EEE)"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Böblingen" },
+      { "@type": "City", "name": "Sindelfingen" },
+      { "@type": "City", "name": "Herrenberg" },
+      { "@type": "City", "name": "Holzgerlingen" },
+      { "@type": "City", "name": "Leonberg" },
+      { "@type": "City", "name": "Weil der Stadt" },
+      { "@type": "City", "name": "Ehningen" },
+      { "@type": "City", "name": "Schönaich" },
+      { "@type": "City", "name": "Weil im Schönbuch" },
+      { "@type": "City", "name": "Magstadt" },
+      { "@type": "City", "name": "Renningen" },
+      { "@type": "City", "name": "Stuttgart" },
+      { "@type": "AdministrativeArea", "name": "Landkreis Böblingen" }
+    ],
+    "knowsLanguage": "de",
+    "sameAs": ["https://maps.app.goo.gl/YSaY7Bc1RcYgMDSAA"],
+    "priceRange": "€€",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Leistungen der Energieberatung",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Heizungstausch-Paket: Heizlastberechnung, hydraulischer Abgleich & Förderservice",
+            "url": "https://www.energie-hellmann.de/leistungen.html#paket-a"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Individueller Sanierungsfahrplan (iSFP)",
+            "url": "https://www.energie-hellmann.de/leistungen.html#isfp"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fachplanung & Baubegleitung für Dämmung, Fenster und Dach",
+            "url": "https://www.energie-hellmann.de/leistungen.html#baubegleitung"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Energieausweis (Verbrauchs- und Bedarfsausweis)",
+            "url": "https://www.energie-hellmann.de/energieausweis.html"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Einzelleistungen: Heizlastberechnung, hydraulischer Abgleich, Lüftungskonzept, Förderservice",
+            "url": "https://www.energie-hellmann.de/leistungen.html#einzelleistungen"
+          }
+        }
+      ]
+    }
   }
   </script>
 </head>
@@ -43,12 +130,13 @@
   <header class="header">
     <div class="container header__container">
       <a href="index.html" class="logo">
-        <img src="images/logo_weiß.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="1024" height="1024">
+        <img src="images/logo-weiss.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="200" height="200">
         <span class="logo__text">Ingenieurbüro Hellmann</span>
       </a>
       <nav class="nav" id="nav">
         <a href="index.html" class="nav__link nav__link--active">Start</a>
         <a href="leistungen.html" class="nav__link">Leistungen</a>
+                <a href="referenzen.html" class="nav__link">Referenzen</a>
         <a href="partner.html" class="nav__link">Für Handwerksbetriebe</a>
         <a href="ueber-mich.html" class="nav__link">Über mich</a>
         <a href="kontakt.html" class="nav__link">Kontakt</a>
@@ -80,7 +168,7 @@
         </div>
       </div>
       <div class="hero__image">
-        <img src="images/hero.png" alt="Energetisch saniertes Einfamilienhaus mit Wärmepumpe und Solaranlage" width="1024" height="1024">
+        <img src="images/hero.jpg" alt="Energetisch saniertes Einfamilienhaus mit Wärmepumpe und Solaranlage" width="760" height="760" fetchpriority="high" decoding="async">
       </div>
     </div>
   </section>
@@ -95,11 +183,11 @@
         <span>Ingenieur (B.Eng. / M.A.)</span>
       </div>
       <div class="trust-bar__item">
-        <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="height: 30px; margin-right: 5px;" width="965" height="234" loading="lazy">
+        <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="height: 30px; margin-right: 5px;" width="330" height="80" loading="lazy">
         <span>dena-gelistet</span>
       </div>
       <div class="trust-bar__item">
-        <img src="images/gih_logo.png" alt="GIH Bundesverband e.V." style="height: 30px; margin-right: 5px;" width="1500" height="568" loading="lazy">
+        <img src="images/gih_logo.png" alt="GIH Bundesverband e.V." style="height: 30px; margin-right: 5px;" width="300" height="114" loading="lazy">
         <span>Mitglied im GIH Bundesverband e.V.</span>
       </div>
       <div class="trust-bar__item">
@@ -165,7 +253,7 @@
         </div>
         <div class="feature-card">
           <div class="feature-card__icon" style="background: transparent; margin-bottom: var(--spacing-sm);">
-            <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="max-height: 50px;" width="965" height="234" loading="lazy">
+            <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" style="max-height: 50px;" width="330" height="80" loading="lazy">
           </div>
           <h3 class="feature-card__title">dena-gelistet (EEE)</h3>
           <p class="feature-card__text">Eingetragen in der Energieeffizienz-Expertenliste des Bundes für Wohngebäude.</p>
@@ -248,16 +336,17 @@
     <div class="container footer__container">
       <div>
         <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
-        <p>Ihr Energieberater in Böblingen und Umgebung. Unabhängig, digital und schnell.</p>
+        <p>Ihr Energieberater für Böblingen, Sindelfingen, Herrenberg, Leonberg und die Region Stuttgart. Unabhängig, digital und schnell.</p>
         <div class="footer__logos mt-2">
-          <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="965" height="234" loading="lazy">
-          <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="1500" height="568" loading="lazy">
+          <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="330" height="80" loading="lazy">
+          <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="300" height="114" loading="lazy">
         </div>
       </div>
       <div>
         <h4 class="footer__title">Navigation</h4>
         <a href="index.html" class="footer__link">Start</a>
         <a href="leistungen.html" class="footer__link">Leistungen</a>
+                <a href="referenzen.html" class="footer__link">Referenzen</a>
         <a href="partner.html" class="footer__link">Für Handwerksbetriebe</a>
         <a href="ueber-mich.html" class="footer__link">Über mich</a>
         <a href="kontakt.html" class="footer__link">Kontakt</a>
@@ -269,6 +358,7 @@
           <a href="tel:+4915203826121" class="footer__link">📞 0152 / 038 26 121</a>
           <a href="https://wa.me/4915203826121" target="_blank" class="footer__link">💬 WhatsApp Chat</a>
           <a href="mailto:kontakt@energie-hellmann.de" class="footer__link">📧 kontakt@energie-hellmann.de</a>
+                    <a href="https://maps.app.goo.gl/YSaY7Bc1RcYgMDSAA" target="_blank" rel="noopener" class="footer__link">⭐ Bewertungen bei Google</a>
         </p>
       </div>
       <div>

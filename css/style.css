@@ -814,19 +814,11 @@ p {
     max-width: 300px;
     margin: 0 auto;
   }
-}
 
-@media (max-width: 768px) {
-  :root {
-    --font-size-5xl: 36px;
-    --font-size-4xl: 32px;
-    --font-size-3xl: 26px;
-  }
-  
   .header__container {
     height: 70px;
   }
-  
+
   .nav {
     position: fixed;
     top: 70px;
@@ -842,17 +834,25 @@ p {
     visibility: hidden;
     transition: all var(--transition-base);
   }
-  
+
   .nav--open {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
   }
-  
+
   .nav__toggle {
     display: flex;
   }
-  
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-5xl: 36px;
+    --font-size-4xl: 32px;
+    --font-size-3xl: 26px;
+  }
+
   .section {
     padding: var(--spacing-2xl) 0;
   }
