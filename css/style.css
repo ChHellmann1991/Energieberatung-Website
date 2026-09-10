@@ -222,12 +222,13 @@ p {
   font-weight: 700;
   font-size: var(--font-size-lg);
   color: var(--color-secondary);
+  white-space: nowrap;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 }
 
 .nav__link {
@@ -235,6 +236,12 @@ p {
   color: var(--color-secondary);
   position: relative;
   padding: var(--spacing-xs) 0;
+  white-space: nowrap;
+}
+
+.nav .btn {
+  white-space: nowrap;
+  padding: 0.75rem 1.25rem;
 }
 
 .nav__link::after {
@@ -682,6 +689,10 @@ p {
   align-items: start;
 }
 
+.service-grid--center {
+  align-items: center;
+}
+
 /* Contact Info */
 .contact-info {
   display: flex;
@@ -815,6 +826,10 @@ p {
     margin: 0 auto;
   }
 
+}
+
+/* Mobile-Navigation: bis 1099px, weil die Desktop-Nav mit sieben Einträgen erst ab ca. 1100px in eine Zeile passt */
+@media (max-width: 1099px) {
   .header__container {
     height: 70px;
   }

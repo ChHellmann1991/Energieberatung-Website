@@ -1,0 +1,6 @@
+# GitHub Pages baut die Seite mit Jekyll. Diese Dateien gehören nicht auf die Live-Seite:
+exclude:
+  - CLAUDE.md
+  - README.md
+  - docs
+  - .claude
