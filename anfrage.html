@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Festpreis-Angebot anfordern: Heizungstausch-Paket, PV-Konzept, Angebots-Check oder Lüftungskonzept. Ein paar Fragen zum Gebäude, der Preis steht sofort fest.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.energie-hellmann.de/anfrage.html">
+    <title>Festpreis-Angebot anfordern | Ingenieurbüro Hellmann</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <style>
+        .anfrage { max-width: 720px; margin: 0 auto; }
+        .anfrage fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+        .anfrage fieldset[hidden], .anfrage [hidden] { display: none !important; }
+        .anfrage__block { background: var(--color-white); border-radius: var(--border-radius); box-shadow: var(--shadow-sm); padding: var(--spacing-md); margin-bottom: var(--spacing-md); }
+        .anfrage__block h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-sm); }
+        .form-help { font-size: var(--font-size-sm); color: var(--color-gray-600); margin-top: 0.35rem; }
+        .scope { margin-bottom: var(--spacing-sm); font-size: var(--font-size-sm); color: var(--color-gray-800); }
+        .scope summary { cursor: pointer; color: var(--color-primary); font-weight: 600; }
+        .scope p { margin-top: 0.5rem; }
+        .result { border-radius: var(--border-radius); padding: var(--spacing-md); margin-bottom: var(--spacing-md); border-left: 4px solid var(--color-gray-300); background: var(--color-gray-100); }
+        .result--festpreis { border-left-color: var(--color-primary); background: var(--color-accent); }
+        .result--individuell { border-left-color: var(--color-gray-600); background: var(--color-white); box-shadow: var(--shadow-sm); }
+        .result__title { font-size: var(--font-size-xl); margin-bottom: 0.25rem; }
+        .result__price { font-size: var(--font-size-3xl); font-weight: 700; color: var(--color-primary); line-height: 1.2; margin-bottom: var(--spacing-sm); }
+        .result__lines { margin-bottom: var(--spacing-sm); }
+        .result__row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200); }
+        .result__row:last-child { border-bottom: 0; }
+        .result__list { list-style: disc; margin: 0 0 var(--spacing-sm) 1.25rem; }
+        .result__list li { margin-bottom: 0.4rem; }
+        .result__note { font-size: var(--font-size-sm); color: var(--color-gray-800); }
+        .result__switch { margin-top: var(--spacing-sm); }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-weiss.png" alt="Ingenieurbüro Hellmann Logo" class="logo__image" width="200" height="200">
+                <span class="logo__text">Ingenieurbüro Hellmann</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav__link">Start</a>
+                <a href="leistungen.html" class="nav__link">Leistungen</a>
+                <a href="referenzen.html" class="nav__link">Referenzen</a>
+                <a href="partner.html" class="nav__link">Für Handwerksbetriebe</a>
+                <a href="ueber-mich.html" class="nav__link">Über mich</a>
+                <a href="kontakt.html" class="nav__link">Kontakt</a>
+                <a href="kontakt.html" class="btn btn--primary">Jetzt anfragen</a>
+            </nav>
+            <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section section--gray" id="main-content" style="padding-top: 120px;">
+        <div class="container">
+            <div class="anfrage">
+                <div class="section-header" style="text-align: left; margin-bottom: var(--spacing-lg);">
+                    <h1>Festpreis-Angebot anfordern</h1>
+                    <p style="margin-top: 1rem; color: var(--color-gray-800);">
+                        Beantworten Sie ein paar Fragen zu Ihrem Gebäude. Sie sehen sofort, ob der Festpreis für Sie gilt.
+                        Innerhalb von zwei Werktagen erhalten Sie ein schriftliches Angebot zu diesem Preis.
+                        Beauftragt ist erst, wenn Sie das Angebot annehmen. Bezahlt wird nach Leistung auf Rechnung.
+                    </p>
+                    <p class="form-help" style="margin-top: 0.75rem;">
+                        Für einen Sanierungsfahrplan (iSFP), die Baubegleitung oder einen Energieausweis nutzen Sie bitte das
+                        <a href="kontakt.html">Kontaktformular</a>.
+                    </p>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" id="offerForm" novalidate>
+                    <input type="hidden" name="access_key" value="a8754814-48a0-44f5-9de6-1d1d8e7acb36">
+                    <input type="hidden" name="subject" id="f-subject" value="Anfrage über energie-hellmann.de">
+                    <input type="hidden" name="from_name" value="Ingenieurbüro Hellmann Website">
+                    <input type="hidden" name="redirect" value="https://www.energie-hellmann.de/anfrage.html?success=true">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="Ergebnis" id="f-ergebnis" value="">
+                    <input type="hidden" name="Festpreis" id="f-festpreis" value="">
+                    <input type="hidden" name="Positionen" id="f-positionen" value="">
+                    <input type="hidden" name="Hinweise" id="f-hinweise" value="">
+                    <input type="hidden" name="Quelle (Link)" id="f-quelle" value="">
+
+                    <!-- 1. Leistung und Gebäude -->
+                    <div class="anfrage__block">
+                        <h2>Ihre Anfrage</h2>
+                        <div class="form-group">
+                            <label for="f-leistung" class="form-label">Leistung *</label>
+                            <select id="f-leistung" name="Leistung" class="form-select" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Heizungstausch-Paket (Paket A)" data-k="paket-a">Heizungstausch-Paket (Paket A)</option>
+                                <option value="PV-Konzept &amp; Wirtschaftlichkeit" data-k="pv-konzept">PV-Konzept &amp; Wirtschaftlichkeit</option>
+                                <option value="Angebots-Check Photovoltaik" data-k="pv-angebotscheck">Angebots-Check Photovoltaik</option>
+                                <option value="Angebotscheck Handwerkerangebote" data-k="angebotscheck">Angebotscheck für Handwerkerangebote</option>
+                                <option value="Lüftungskonzept DIN 1946-6" data-k="lueftung">Lüftungskonzept nach DIN 1946-6</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="display: grid; grid-template-columns: 8rem 1fr; gap: 0.75rem;">
+                            <div>
+                                <label for="f-plz" class="form-label">PLZ Gebäude *</label>
+                                <input type="text" id="f-plz" name="PLZ" class="form-input" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required autocomplete="postal-code">
+                            </div>
+                            <div>
+                                <label for="f-ort" class="form-label">Ort *</label>
+                                <input type="text" id="f-ort" name="Ort" class="form-input" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2a. Paket A -->
+                    <fieldset class="anfrage__block" data-product="paket-a" hidden>
+                        <h2>Heizungstausch-Paket</h2>
+                        <details class="scope">
+                            <summary>Was ist enthalten?</summary>
+                            <p><strong>Enthalten:</strong> raumweise Heizlastberechnung nach DIN EN 12831, hydraulischer Abgleich nach Verfahren B mit Einstellwerten für Ihren Heizungsbauer, Bestätigung zum Antrag (BzA) und Begleitung Ihres KfW-Antrags bis zum Nachweis nach der Umsetzung.</p>
+                            <p><strong>Nicht enthalten:</strong> Anlagenplanung und Geräteauswahl, Elektroplanung, Statik und Rechtsberatung.</p>
+                        </details>
+                        <div class="form-group">
+                            <label for="pa-gebaeude" class="form-label">Gebäudeart *</label>
+                            <select id="pa-gebaeude" name="Gebäudeart" class="form-select" data-q="gebaeude" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Einfamilienhaus" data-k="efh">Einfamilienhaus (auch Doppel- oder Reihenhaus)</option>
+                                <option value="Einfamilienhaus mit Einliegerwohnung" data-k="elw">Einfamilienhaus mit Einliegerwohnung</option>
+                                <option value="Zweifamilienhaus" data-k="zfh">Zweifamilienhaus</option>
+                                <option value="Mehrfamilienhaus" data-k="mfh">Mehrfamilienhaus (ab 3 Wohnungen)</option>
+                                <option value="Gewerblich genutzt" data-k="gewerbe">Ganz oder teilweise gewerblich genutzt</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-flaeche" class="form-label">Beheizte Wohnfläche in m² *</label>
+                            <input type="number" id="pa-flaeche" name="Wohnfläche (m²)" class="form-input" data-q="flaeche" min="20" max="5000" step="1" inputmode="numeric" required>
+                            <p class="form-help">Ein Schätzwert reicht, z. B. aus dem Kaufvertrag oder den Plänen.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-verteilung" class="form-label">Wie wird geheizt? *</label>
+                            <select id="pa-verteilung" name="Wärmeverteilung" class="form-select" data-q="verteilung" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Nur Heizkörper" data-k="hk">Nur Heizkörper</option>
+                                <option value="Nur Fußbodenheizung" data-k="fbh">Nur Fußbodenheizung</option>
+                                <option value="Heizkörper und Fußbodenheizung" data-k="mix">Heizkörper und Fußbodenheizung</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-heizung" class="form-label">Welche neue Heizung ist geplant? *</label>
+                            <select id="pa-heizung" name="Geplante Heizung" class="form-select" data-q="heizung" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Wärmepumpe" data-k="wp">Wärmepumpe</option>
+                                <option value="Holz- oder Pelletheizung" data-k="bio">Holz- oder Pelletheizung</option>
+                                <option value="Anschluss an ein Wärmenetz" data-k="netz">Anschluss an ein Wärmenetz</option>
+                                <option value="Gas- oder Ölheizung" data-k="fossil">Gas- oder Ölheizung</option>
+                                <option value="Noch offen" data-k="offen">Noch offen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-stand" class="form-label">Wie weit sind Sie mit dem Heizungsbauer? *</label>
+                            <select id="pa-stand" name="Stand Heizungsbauer" class="form-select" data-q="stand" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Noch kein Angebot" data-k="kein">Noch kein Angebot</option>
+                                <option value="Angebot liegt vor, nicht unterschrieben" data-k="angebot">Angebot liegt vor, noch nicht unterschrieben</option>
+                                <option value="Vertrag unterschrieben, mit Förderklausel" data-k="klausel">Vertrag unterschrieben, mit Förderklausel</option>
+                                <option value="Vertrag unterschrieben, ohne Förderklausel" data-k="ohne">Vertrag unterschrieben, ohne Förderklausel</option>
+                                <option value="Vertrag unterschrieben, Klausel unklar" data-k="unsicher">Vertrag unterschrieben, unklar ob mit Förderklausel</option>
+                                <option value="Heizung bereits eingebaut" data-k="eingebaut">Die neue Heizung ist bereits eingebaut</option>
+                            </select>
+                            <p class="form-help">Förderklausel heißt: Der Vertrag gilt nur, wenn die KfW den Zuschuss zusagt (aufschiebende oder auflösende Bedingung).</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-eigentum" class="form-label">Gehört Ihnen das Haus? *</label>
+                            <select id="pa-eigentum" name="Eigentum" class="form-select" data-q="eigentum" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Eigentümer:in" data-k="ja">Ja, ich bin (Mit-)Eigentümer:in</option>
+                                <option value="Anfrage für Eigentümer" data-k="fuer">Nein, ich frage für die Eigentümer an (z. B. Eltern)</option>
+                                <option value="Kauf läuft" data-k="kauf">Nein, ich kaufe das Haus gerade</option>
+                                <option value="Anderes" data-k="sonst">Anderes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-plaene" class="form-label">Haben Sie Grundrisse mit Maßen? *</label>
+                            <select id="pa-plaene" name="Grundrisse" class="form-select" data-q="plaene" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Ja, alle beheizten Geschosse" data-k="ja">Ja, für alle beheizten Geschosse</option>
+                                <option value="Teilweise oder unsicher" data-k="teil">Teilweise oder unsicher</option>
+                                <option value="Nein" data-k="nein">Nein</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pa-zeit" class="form-label">Wann soll die neue Heizung eingebaut werden?</label>
+                            <select id="pa-zeit" name="Zeitplan Einbau" class="form-select" data-q="zeit">
+                                <option value="" data-k="" selected>Bitte wählen (optional)</option>
+                                <option value="In den nächsten 4 Wochen" data-k="bald">In den nächsten 4 Wochen</option>
+                                <option value="In 1 bis 3 Monaten" data-k="mittel">In 1 bis 3 Monaten</option>
+                                <option value="Später oder noch offen" data-k="spaeter">Später oder noch offen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="Zusatz PV-Konzept" value="Ja" data-q="pv">
+                                <span>Zusätzlich eine PV-Anlage prüfen lassen: PV-Konzept mit Abstimmung auf die Wärmepumpe für 400 €</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- 2b. PV-Konzept -->
+                    <fieldset class="anfrage__block" data-product="pv-konzept" hidden>
+                        <h2>PV-Konzept &amp; Wirtschaftlichkeit</h2>
+                        <details class="scope">
+                            <summary>Was ist enthalten?</summary>
+                            <p><strong>Enthalten:</strong> Dachpotenzial und Ertragsprognose je Dachfläche, Dimensionierung auf Eigenverbrauch, Speicherempfehlung, Abstimmung mit Wärmepumpe und Wallbox, Wirtschaftlichkeit über 20 Jahre, schriftlicher Bericht mit Auslegungsempfehlung.</p>
+                            <p><strong>Nicht enthalten:</strong> Elektroplanung, Netzanschlussverfahren, Statik sowie Einholung und Verhandlung von Installationsangeboten.</p>
+                        </details>
+                        <div class="form-group">
+                            <label for="pv-gebaeude" class="form-label">Gebäudeart *</label>
+                            <select id="pv-gebaeude" name="Gebäudeart" class="form-select" data-q="gebaeude" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Ein- oder Zweifamilienhaus" data-k="efh">Ein- oder Zweifamilienhaus (auch Doppel- oder Reihenhaus)</option>
+                                <option value="Mehrfamilienhaus" data-k="mfh">Mehrfamilienhaus</option>
+                                <option value="Gewerbe oder Landwirtschaft" data-k="gewerbe">Gewerbe oder Landwirtschaft</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pv-flaechen" class="form-label">Wie viele Dachflächen sollen belegt werden? *</label>
+                            <select id="pv-flaechen" name="Dachflächen" class="form-select" data-q="flaechen" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="1 oder 2" data-k="klein">1 oder 2</option>
+                                <option value="3 oder 4" data-k="mittel">3 oder 4</option>
+                                <option value="Mehr als 4 oder zusätzlich Carport/Fassade" data-k="gross">Mehr als 4 oder zusätzlich Carport oder Fassade</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pv-stand" class="form-label">Liegen schon Angebote vor? *</label>
+                            <select id="pv-stand" name="Stand PV" class="form-select" data-q="stand" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Noch keine Angebote" data-k="kein">Nein, noch keine</option>
+                                <option value="1 Angebot" data-k="eins">Ja, ein Angebot</option>
+                                <option value="2 oder 3 Angebote" data-k="mehrere">Ja, zwei oder drei Angebote</option>
+                                <option value="Anlage bereits beauftragt" data-k="beauftragt">Die Anlage ist bereits beauftragt</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- 2c. Angebots-Check PV -->
+                    <fieldset class="anfrage__block" data-product="pv-angebotscheck" hidden>
+                        <h2>Angebots-Check Photovoltaik</h2>
+                        <details class="scope">
+                            <summary>Was ist enthalten?</summary>
+                            <p><strong>Enthalten:</strong> Prüfung von bis zu drei vorliegenden Angeboten: Preis im Marktvergleich (€/kWp, Speicher je kWh), Plausibilität von Anlagengröße und Speicher, Komponenten und Leistungsumfang, Nachrechnung der Wirtschaftlichkeit, schriftliche Bewertung je Angebot mit Empfehlung.</p>
+                            <p><strong>Nicht enthalten:</strong> Nachverhandlung mit Anbietern, rechtliche Vertragsprüfung, Elektroplanung sowie die Prüfung weiterer Angebote.</p>
+                        </details>
+                        <div class="form-group">
+                            <label for="pc-gebaeude" class="form-label">Gebäudeart *</label>
+                            <select id="pc-gebaeude" name="Gebäudeart" class="form-select" data-q="gebaeude" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Ein- oder Zweifamilienhaus" data-k="efh">Ein- oder Zweifamilienhaus (auch Doppel- oder Reihenhaus)</option>
+                                <option value="Mehrfamilienhaus" data-k="mfh">Mehrfamilienhaus</option>
+                                <option value="Gewerbe oder Landwirtschaft" data-k="gewerbe">Gewerbe oder Landwirtschaft</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc-anzahl" class="form-label">Wie viele Angebote sollen geprüft werden? *</label>
+                            <select id="pc-anzahl" name="Anzahl Angebote" class="form-select" data-q="anzahl" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="1 bis 3" data-k="ok">1 bis 3</option>
+                                <option value="Mehr als 3" data-k="mehr">Mehr als 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pc-unterschrieben" class="form-label">Haben Sie schon unterschrieben? *</label>
+                            <select id="pc-unterschrieben" name="Bereits unterschrieben" class="form-select" data-q="unterschrieben" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Nein" data-k="nein">Nein, noch nicht</option>
+                                <option value="Ja" data-k="ja">Ja</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- 2d. Angebotscheck Handwerkerangebote -->
+                    <fieldset class="anfrage__block" data-product="angebotscheck" hidden>
+                        <h2>Angebotscheck für Handwerkerangebote</h2>
+                        <details class="scope">
+                            <summary>Was ist enthalten?</summary>
+                            <p><strong>Enthalten:</strong> Prüfung von bis zu drei Angeboten für ein Gewerk ohne Vor-Ort-Termin: Vollständigkeit und fehlende Positionen, technische Plausibilität anhand Ihrer Unterlagen, Förderfähigkeit (technische Mindestanforderungen, förderfähige Kosten, nötige Vertragsbedingungen), Preiseinordnung und Rückfragen an den Anbieter, schriftliche Kurzbewertung.</p>
+                            <p><strong>Nicht enthalten:</strong> rechtliche Prüfung von Vertragsbedingungen (AGB, Gewährleistung), eigene Berechnungen wie eine Heizlastberechnung und Aussagen zur Zuverlässigkeit des Anbieters.</p>
+                        </details>
+                        <div class="form-group">
+                            <label for="ac-gewerk" class="form-label">Um welches Gewerk geht es? *</label>
+                            <select id="ac-gewerk" name="Gewerk" class="form-select" data-q="gewerk" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Fenster und Außentüren" data-k="fenster">Fenster und Außentüren</option>
+                                <option value="Dach" data-k="dach">Dach</option>
+                                <option value="Fassade" data-k="fassade">Fassade</option>
+                                <option value="Oberste Geschossdecke oder Kellerdecke" data-k="decke">Oberste Geschossdecke oder Kellerdecke</option>
+                                <option value="Heizung oder Wärmepumpe" data-k="heizung">Heizung oder Wärmepumpe</option>
+                                <option value="Photovoltaik" data-k="pv">Photovoltaik</option>
+                                <option value="Mehrere Gewerke" data-k="mehrere">Mehrere Gewerke</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ac-anzahl" class="form-label">Wie viele Angebote sollen geprüft werden? *</label>
+                            <select id="ac-anzahl" name="Anzahl Angebote" class="form-select" data-q="anzahl" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="1 bis 3" data-k="ok">1 bis 3</option>
+                                <option value="Mehr als 3" data-k="mehr">Mehr als 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ac-unterschrieben" class="form-label">Haben Sie schon unterschrieben? *</label>
+                            <select id="ac-unterschrieben" name="Bereits unterschrieben" class="form-select" data-q="unterschrieben" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Nein" data-k="nein">Nein, noch nicht</option>
+                                <option value="Ja" data-k="ja">Ja</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- 2e. Lüftungskonzept -->
+                    <fieldset class="anfrage__block" data-product="lueftung" hidden>
+                        <h2>Lüftungskonzept nach DIN 1946-6</h2>
+                        <details class="scope">
+                            <summary>Was ist enthalten?</summary>
+                            <p><strong>Enthalten:</strong> Prüfung, ob lüftungstechnische Maßnahmen erforderlich sind, und Festlegung der Maßnahme zum Feuchteschutz auf Basis Ihrer Pläne.</p>
+                            <p><strong>Nicht enthalten:</strong> Planung und Dimensionierung einer Lüftungsanlage (Geräteauswahl, Kanalnetz).</p>
+                        </details>
+                        <div class="form-group">
+                            <label for="lk-gebaeude" class="form-label">Gebäudeart *</label>
+                            <select id="lk-gebaeude" name="Gebäudeart" class="form-select" data-q="gebaeude" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Einfamilienhaus" data-k="efh">Einfamilienhaus (auch Doppel- oder Reihenhaus)</option>
+                                <option value="Haus mit mehreren Wohnungen" data-k="mehr">Haus mit mehreren Wohnungen (auch Einliegerwohnung)</option>
+                                <option value="Gewerblich genutzt" data-k="gewerbe">Ganz oder teilweise gewerblich genutzt</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lk-bb" class="form-label">Planen Sie für die Maßnahme auch eine geförderte Baubegleitung? *</label>
+                            <select id="lk-bb" name="Baubegleitung geplant" class="form-select" data-q="baubegleitung" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Nein, nur Lüftungskonzept" data-k="nein">Nein, nur das Lüftungskonzept</option>
+                                <option value="Ja" data-k="ja">Ja</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="lk-plaene" class="form-label">Haben Sie Grundrisse mit Maßen? *</label>
+                            <select id="lk-plaene" name="Grundrisse" class="form-select" data-q="plaene" required>
+                                <option value="" data-k="" selected>Bitte wählen</option>
+                                <option value="Ja" data-k="ja">Ja</option>
+                                <option value="Nein oder unvollständig" data-k="nein">Nein oder unvollständig</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- 3. Ergebnis -->
+                    <div class="result" id="result" aria-live="polite" hidden></div>
+
+                    <!-- 4. Kontakt -->
+                    <div class="anfrage__block" id="contactBlock" hidden>
+                        <h2>Ihre Kontaktdaten</h2>
+                        <div class="form-group">
+                            <label for="f-name" class="form-label">Name *</label>
+                            <input type="text" id="f-name" name="name" class="form-input" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email" class="form-label">E-Mail *</label>
+                            <input type="email" id="f-email" name="email" class="form-input" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-phone" class="form-label">Telefon</label>
+                            <input type="tel" id="f-phone" name="phone" class="form-input" placeholder="Optional, für Rückfragen" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-herkunft" class="form-label">Wie sind Sie auf mich aufmerksam geworden?</label>
+                            <select id="f-herkunft" name="Aufmerksam geworden durch" class="form-select">
+                                <option value="" selected>Bitte wählen (optional)</option>
+                                <option>Empfehlung eines Handwerksbetriebs</option>
+                                <option>Empfehlung von Bekannten</option>
+                                <option>Google</option>
+                                <option>Energieeffizienz-Expertenliste (dena)</option>
+                                <option>Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-message" class="form-label">Anmerkungen</label>
+                            <textarea id="f-message" name="message" class="form-textarea" placeholder="Optional, z. B. Termindruck oder Besonderheiten am Gebäude"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="privacy" required>
+                                <span>Mir ist bekannt, dass dieses Formular über den Dienstleister Web3Forms
+                                    (Indien, Server in den USA) übermittelt wird und meine Daten dabei in Länder
+                                    ohne EU-Angemessenheitsbeschluss gelangen. In diese Übermittlung willige ich
+                                    ausdrücklich ein (Art. 49 Abs. 1 lit. a DSGVO). Einzelheiten und Risiken:
+                                    <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>. *</span>
+                            </label>
+                            <p class="form-help">
+                                Sie möchten das nicht? Schreiben Sie mir stattdessen an
+                                <a href="mailto:kontakt@energie-hellmann.de">kontakt@energie-hellmann.de</a>.
+                            </p>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large" id="submitBtn" style="width: 100%;">Festpreis-Angebot anfordern</button>
+                        <p class="form-help" style="text-align: center;">Unverbindlich. Beauftragt ist erst, wenn Sie mein Angebot annehmen.</p>
+                        <p class="form-help" id="formError" role="alert" style="color: #b00020;" hidden>Bitte füllen Sie die markierten Pflichtfelder aus.</p>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="result result--festpreis" hidden>
+                    <p class="result__title"><strong>Vielen Dank, Ihre Anfrage ist angekommen.</strong></p>
+                    <p>Sie erhalten innerhalb von zwei Werktagen mein Angebot per E-Mail. Die Unterlagen zum Gebäude brauche ich erst, wenn Sie das Angebot angenommen haben.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <h4 class="footer__title">Ingenieurbüro Hellmann</h4>
+                <p>Ihr Energieberater für Böblingen, Sindelfingen, Herrenberg, Leonberg und die Region Stuttgart. Unabhängig, digital und schnell.</p>
+                <div class="footer__logos mt-2">
+                    <img src="images/EE_EnergieeffizienzExperten_Logo.jpg" alt="dena Energieeffizienz-Experte" class="dena-logo-badge" width="330" height="80" loading="lazy">
+                    <img src="images/gih_logo.png" alt="Mitglied im GIH Bundesverband e.V." class="gih-logo-badge" width="300" height="114" loading="lazy">
+                </div>
+            </div>
+            <div>
+                <h4 class="footer__title">Navigation</h4>
+                <a href="index.html" class="footer__link">Start</a>
+                <a href="leistungen.html" class="footer__link">Leistungen</a>
+                <a href="referenzen.html" class="footer__link">Referenzen</a>
+                <a href="partner.html" class="footer__link">Für Handwerksbetriebe</a>
+                <a href="ueber-mich.html" class="footer__link">Über mich</a>
+                <a href="kontakt.html" class="footer__link">Kontakt</a>
+            </div>
+            <div>
+                <h4 class="footer__title">Kontakt</h4>
+                <p>Christoph Hellmann<br>Zeisigweg 17/2<br>71032 Böblingen</p>
+                <p class="mt-2">
+                    <a href="tel:+4915203826121" class="footer__link">📞 0152 / 038 26 121</a>
+                    <a href="https://wa.me/4915203826121" target="_blank" class="footer__link">💬 WhatsApp Chat</a>
+                    <a href="mailto:kontakt@energie-hellmann.de" class="footer__link">📧 kontakt@energie-hellmann.de</a>
+                    <a href="https://maps.app.goo.gl/YSaY7Bc1RcYgMDSAA" target="_blank" rel="noopener" class="footer__link">⭐ Bewertungen bei Google</a>
+                </p>
+            </div>
+            <div>
+                <h4 class="footer__title">Rechtliches</h4>
+                <a href="impressum.html" class="footer__link">Impressum</a>
+                <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2026 Ingenieurbüro Hellmann. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+    (function () {
+        // ===== KONFIGURATION: Preise und Regeln hier pflegen =====
+        var CONFIG = {
+            rueckmeldung: 'zwei Werktagen',
+            maxWohnflaeche: 350,                 // darüber individuelles Angebot
+            // Einzugsgebiet für Vor-Ort-Termine: Landkreis Böblingen komplett + direkt angrenzende Orte
+            // mit kürzerer Fahrzeit als Leonberg. PLZ streichen oder ergänzen, sonst nichts ändern.
+            einzugsgebiet: [
+                // Landkreis Böblingen
+                '71032', '71034', '71063', '71065', '71067', '71069', '71083', '71088', '71093', '71101',
+                '71106', '71111', '71116', '71120', '71126', '71131', '71134', '71139', '71144', '71149',
+                '71154', '71155', '71157', '71159', '71229', '71263', '71272', '71277', '71287', '75392',
+                // Stuttgart: Vaihingen, Möhringen, Rohr, Fasanenhof, Kaltental, Büsnau, Degerloch, Birkach,
+                // Plieningen, Flughafen, Botnang, West, Süd, Nord
+                '70563', '70565', '70567', '70569', '70597', '70599', '70629', '70195', '70197', '70199', '70180', '70193',
+                // Leinfelden-Echterdingen, Filderstadt, Gerlingen, Dettenhausen
+                '70771', '70794', '70839', '72135'
+            ],
+            aufmassPaketA: 0,                    // Vor-Ort-Aufnahme ohne Pläne: 0 = im Festpreis enthalten
+            aufmassLueftung: 175,                // laut Preisliste 8.5
+            preis: {
+                heizlastKlein: 550, heizlastGross: 700,
+                hydrKlein: 450, hydrGross: 550,
+                foerderservice: 280,
+                pvKonzept: 590, pvKonzeptZusatz: 400,
+                pvAngebotscheck: 330, angebotscheck: 240, lueftung: 390
+            }
+        };
+        var TITEL = {
+            'paket-a': 'Heizungstausch-Paket', 'pv-konzept': 'PV-Konzept', 'pv-angebotscheck': 'Angebots-Check PV',
+            'angebotscheck': 'Angebotscheck', 'lueftung': 'Lüftungskonzept'
+        };
+
+        // BEGIN_LOGIC (reine Funktion, ohne DOM)
+        function evaluate(product, a, plz, C) {
+            var r = { state: 'offen', lines: [], reasons: [], hints: [], switchTo: null, switchLabel: '' };
+            function need(keys) { for (var i = 0; i < keys.length; i++) { if (!a[keys[i]]) return false; } return true; }
+            function plzOk() { return /^[0-9]{5}$/.test(plz || ''); }
+            function inArea() { return C.einzugsgebiet.indexOf(plz || '') !== -1; }
+            var AUSSERHALB = 'Vor Ort bin ich im Landkreis Böblingen und im direkt angrenzenden Raum Stuttgart. Ob ein Termin bei Ihnen möglich ist, prüfe ich individuell. Tipp: Grundrisse bekommen Sie häufig aus der Bauakte beim Baurechtsamt Ihrer Gemeinde. Dann geht es ganz ohne Termin.';
+            function line(label, pos, price) { r.lines.push({ label: label, pos: pos, price: price }); }
+
+            if (product === 'paket-a') {
+                if (!need(['gebaeude', 'flaeche', 'verteilung', 'heizung', 'stand', 'eigentum', 'plaene']) || !plzOk()) return r;
+                var qm = Number(a.flaeche);
+                if (a.gebaeude === 'mfh' || a.gebaeude === 'gewerbe') r.reasons.push('Für Mehrfamilienhäuser und gewerblich genutzte Gebäude erstelle ich ein individuelles Angebot.');
+                if (qm > C.maxWohnflaeche) r.reasons.push('Bei mehr als ' + C.maxWohnflaeche + ' m² Wohnfläche kalkuliere ich individuell.');
+                if (a.heizung === 'fossil') r.reasons.push('Bei einer Gas- oder Ölheizung stimme ich den Leistungsumfang individuell mit Ihnen ab.');
+                if (a.stand === 'ohne') r.reasons.push('Ein Vertrag ohne Förderklausel gilt bei der KfW als Beginn des Vorhabens. Ein Förderantrag ist dann in der Regel nicht mehr möglich. Heizlast und hydraulischer Abgleich können trotzdem sinnvoll sein.');
+                if (a.stand === 'unsicher') r.reasons.push('Ob die Förderung noch möglich ist, hängt an der Formulierung im Vertrag. Schicken Sie mir den Vertrag nach dem Absenden bitte an kontakt@energie-hellmann.de. Ich prüfe die Klausel, bevor Sie ein Angebot bekommen.');
+                if (a.stand === 'eingebaut') r.reasons.push('Nach dem Einbau ist ein KfW-Antrag nicht mehr möglich. Einen hydraulischen Abgleich kann ich trotzdem berechnen.');
+                if (a.eigentum === 'kauf') r.reasons.push('Für Kaufinteressenten passt meist die energetische Kaufberatung besser. Ich melde mich mit einem passenden Angebot.');
+                if (a.eigentum === 'sonst') r.reasons.push('Den KfW-Antrag stellen die Eigentümer selbst. Ich kläre mit Ihnen, wie wir das am besten lösen.');
+                if (a.plaene !== 'ja' && !inArea()) r.reasons.push(AUSSERHALB);
+                if (r.reasons.length) { r.state = 'individuell'; return r; }
+
+                var gross = qm > 200;
+                var heizlastGross = gross || a.gebaeude !== 'efh';
+                var hydrGross = gross || a.verteilung === 'mix';
+                line('Raumweise Heizlastberechnung (DIN EN 12831)', heizlastGross ? '2.3' : '2.1', heizlastGross ? C.preis.heizlastGross : C.preis.heizlastKlein);
+                line('Hydraulischer Abgleich (Verfahren B)', hydrGross ? '2.5' : '2.2', hydrGross ? C.preis.hydrGross : C.preis.hydrKlein);
+                line('KfW-Förderservice (BzA, Antragsbegleitung, Nachweis)', '4.1', C.preis.foerderservice);
+                if (a.pv) line('PV-Konzept als Zusatz', '6.1', C.preis.pvKonzeptZusatz);
+                if (a.plaene !== 'ja') {
+                    if (C.aufmassPaketA > 0) line('Aufnahme vor Ort', 'Aufnahme', C.aufmassPaketA);
+                    r.hints.push('Ohne vollständige Grundrisse nehme ich Ihr Haus bei einem Termin vor Ort digital auf, werktags vormittags.' + (C.aufmassPaketA > 0 ? '' : ' Das ist im Festpreis enthalten.') + ' Haben Sie Pläne aus der Bauakte, geht es ohne Termin und meist schneller.');
+                }
+                if (a.stand === 'kein' || a.stand === 'angebot') r.hints.push('Wichtig für die Förderung: Unterschreiben Sie den Vertrag für die neue Heizung nur mit Förderklausel. Ohne sie ist der KfW-Zuschuss verloren.');
+                if (a.stand === 'klausel') r.hints.push('Mit Förderklausel können Sie den Antrag noch stellen. Der Vertrag muss außerdem das voraussichtliche Umsetzungsdatum nennen.');
+                if (a.eigentum === 'fuer') r.hints.push('Den KfW-Antrag stellen die Eigentümer selbst im Portal „Meine KfW“. Ich begleite sie dabei.');
+                r.state = 'festpreis'; return r;
+            }
+
+            if (product === 'pv-konzept') {
+                if (!need(['gebaeude', 'flaechen', 'stand']) || !plzOk()) return r;
+                if (a.gebaeude !== 'efh') r.reasons.push('Für Mehrfamilienhäuser, Gewerbe und Landwirtschaft erstelle ich ein individuelles Angebot.');
+                if (a.flaechen === 'gross') r.reasons.push('Bei mehr als vier Dachflächen oder zusätzlichen Flächen kalkuliere ich individuell.');
+                if (a.stand === 'beauftragt') r.reasons.push('Wenn die Anlage schon beauftragt ist, schreiben Sie mir kurz, was Sie klären möchten. Ich melde mich mit einer Einschätzung.');
+                if (r.reasons.length) { r.state = 'individuell'; return r; }
+                line('PV-Konzept & Wirtschaftlichkeit', '6.2', C.preis.pvKonzept);
+                if (a.stand === 'mehrere') { r.hints.push('Wenn Sie vor allem die vorliegenden Angebote vergleichen möchten, reicht der Angebots-Check Photovoltaik für ' + C.preis.pvAngebotscheck + ' €.'); r.switchTo = 'pv-angebotscheck'; r.switchLabel = 'Zum Angebots-Check Photovoltaik wechseln'; }
+                r.hints.push('Planen Sie auch einen Heizungstausch? Zusammen mit dem Heizungstausch-Paket kostet das PV-Konzept ' + C.preis.pvKonzeptZusatz + ' €.');
+                r.state = 'festpreis'; return r;
+            }
+
+            if (product === 'pv-angebotscheck') {
+                if (!need(['gebaeude', 'anzahl', 'unterschrieben']) || !plzOk()) return r;
+                if (a.gebaeude !== 'efh') r.reasons.push('Für Mehrfamilienhäuser, Gewerbe und Landwirtschaft erstelle ich ein individuelles Angebot.');
+                if (a.anzahl === 'mehr') r.reasons.push('Bis zu drei Angebote sind im Festpreis enthalten. Bei mehr kalkuliere ich individuell.');
+                if (a.unterschrieben === 'ja') r.reasons.push('Nach der Unterschrift kann ich die Angebote nur noch einordnen. Schreiben Sie mir kurz, was Sie klären möchten.');
+                if (r.reasons.length) { r.state = 'individuell'; return r; }
+                line('Angebots-Check Photovoltaik (bis 3 Angebote)', '8.6', C.preis.pvAngebotscheck);
+                r.state = 'festpreis'; return r;
+            }
+
+            if (product === 'angebotscheck') {
+                if (!need(['gewerk', 'anzahl', 'unterschrieben']) || !plzOk()) return r;
+                if (a.gewerk === 'pv') { r.reasons.push('Für Photovoltaik gibt es einen eigenen Angebots-Check.'); r.switchTo = 'pv-angebotscheck'; r.switchLabel = 'Zum Angebots-Check Photovoltaik wechseln'; }
+                if (a.gewerk === 'mehrere') r.reasons.push('Für mehrere Gewerke erstelle ich ein gemeinsames Angebot.');
+                if (a.anzahl === 'mehr') r.reasons.push('Bis zu drei Angebote sind im Festpreis enthalten. Bei mehr kalkuliere ich individuell.');
+                if (a.unterschrieben === 'ja') r.reasons.push('Nach der Unterschrift kann ich die Angebote nur noch einordnen. Schreiben Sie mir kurz, was Sie klären möchten.');
+                if (r.reasons.length) { r.state = 'individuell'; return r; }
+                line('Angebotscheck (ein Gewerk, bis 3 Angebote)', '8.4', C.preis.angebotscheck);
+                if (a.gewerk === 'heizung') { r.hints.push('Ohne Heizlastberechnung kann ich die Größe der Wärmepumpe nur grob einordnen. Dafür ist das Heizungstausch-Paket gedacht.'); r.switchTo = 'paket-a'; r.switchLabel = 'Zum Heizungstausch-Paket wechseln'; }
+                else r.hints.push('Beauftragen Sie innerhalb von drei Monaten die Baubegleitung für dasselbe Gewerk, rechne ich den Betrag voll an.');
+                r.state = 'festpreis'; return r;
+            }
+
+            if (product === 'lueftung') {
+                if (!need(['gebaeude', 'baubegleitung', 'plaene']) || !plzOk()) return r;
+                if (a.gebaeude !== 'efh') r.reasons.push('Bei mehreren Wohnungen wird das Konzept je Wohnung erstellt. Ich erstelle Ihnen ein individuelles Angebot.');
+                if (a.baubegleitung === 'ja') r.reasons.push('Zusammen mit der Baubegleitung kostet das Lüftungskonzept 250 €. Ich erstelle Ihnen ein gemeinsames Angebot.');
+                if (a.plaene === 'nein' && !inArea()) r.reasons.push(AUSSERHALB);
+                if (r.reasons.length) { r.state = 'individuell'; return r; }
+                line('Lüftungskonzept nach DIN 1946-6', '8.5', C.preis.lueftung);
+                if (a.plaene === 'nein') line('Aufnahme vor Ort (ohne Pläne)', 'Aufnahme', C.aufmassLueftung);
+                r.state = 'festpreis'; return r;
+            }
+            return r;
+        }
+        // END_LOGIC
+
+        var form = document.getElementById('offerForm');
+        if (!form) return;
+        var sel = document.getElementById('f-leistung');
+        var plzEl = document.getElementById('f-plz');
+        var resultEl = document.getElementById('result');
+        var contactEl = document.getElementById('contactBlock');
+        var btn = document.getElementById('submitBtn');
+        var errEl = document.getElementById('formError');
+        var fieldsets = form.querySelectorAll('fieldset[data-product]');
+        var last = null;
+
+        function eur(n) { return n.toLocaleString('de-DE') + ' €'; }
+        function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+        function currentProduct() { var o = sel.selectedOptions[0]; return o ? o.getAttribute('data-k') : ''; }
+
+        function answers(fs) {
+            var a = {};
+            fs.querySelectorAll('[data-q]').forEach(function (el) {
+                if (el.type === 'checkbox') a[el.getAttribute('data-q')] = el.checked;
+                else if (el.tagName === 'SELECT') a[el.getAttribute('data-q')] = el.selectedOptions[0] ? el.selectedOptions[0].getAttribute('data-k') : '';
+                else a[el.getAttribute('data-q')] = el.value.trim();
+            });
+            return a;
+        }
+
+        function showProduct() {
+            var p = currentProduct();
+            fieldsets.forEach(function (fs) {
+                var on = fs.getAttribute('data-product') === p;
+                fs.hidden = !on;
+                fs.querySelectorAll('input, select, textarea').forEach(function (el) { el.disabled = !on; });
+            });
+            update();
+        }
+
+        function render(p, r) {
+            resultEl.className = 'result';
+            if (!p) { resultEl.hidden = true; contactEl.hidden = true; return; }
+            resultEl.hidden = false;
+            if (r.state === 'offen') {
+                resultEl.innerHTML = '<p>Sobald alle Fragen mit * beantwortet sind, sehen Sie hier Ihren Preis.</p>';
+                resultEl.removeAttribute('data-html');
+                contactEl.hidden = true; return;
+            }
+            contactEl.hidden = false;
+            var h = '';
+            if (r.state === 'festpreis') {
+                var sum = r.lines.reduce(function (s, l) { return s + l.price; }, 0);
+                resultEl.classList.add('result--festpreis');
+                h += '<p class="result__title">Ihr Festpreis</p><p class="result__price">' + eur(sum) + '</p>';
+                if (r.lines.length > 1) {
+                    h += '<div class="result__lines">' + r.lines.map(function (l) {
+                        return '<div class="result__row"><span>' + esc(l.label) + '</span><span style="white-space: nowrap;">' + eur(l.price) + '</span></div>';
+                    }).join('') + '</div>';
+                }
+                if (r.hints.length) h += '<ul class="result__list">' + r.hints.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>';
+                h += '<p class="result__note">Innerhalb von ' + CONFIG.rueckmeldung + ' erhalten Sie ein schriftliches Angebot zu diesem Preis. Beauftragt ist erst, wenn Sie es annehmen. Bezahlt wird nach Leistung auf Rechnung. Mehraufwand über den vereinbarten Umfang hinaus nur nach Absprache mit 115 €/h. Als Kleinunternehmer nach § 19 UStG ohne Umsatzsteuer.</p>';
+                btn.textContent = 'Festpreis-Angebot anfordern';
+            } else {
+                resultEl.classList.add('result--individuell');
+                h += '<p class="result__title">Hier passt ein individuelles Angebot</p>';
+                h += '<ul class="result__list">' + r.reasons.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>';
+                h += '<p class="result__note">Senden Sie die Anfrage trotzdem ab. Ihre Angaben gehen mit, Sie müssen nichts neu eingeben. Innerhalb von ' + CONFIG.rueckmeldung + ' erhalten Sie ein Angebot oder eine kurze Einschätzung.</p>';
+                btn.textContent = 'Individuelle Anfrage senden';
+            }
+            if (r.switchTo) h += '<p class="result__switch"><button type="button" class="btn btn--secondary" data-switch="' + r.switchTo + '">' + esc(r.switchLabel) + '</button></p>';
+            if (resultEl.getAttribute('data-html') !== h) { resultEl.innerHTML = h; resultEl.setAttribute('data-html', h); }
+        }
+
+        function update() {
+            var p = currentProduct();
+            var fs = form.querySelector('fieldset[data-product="' + p + '"]');
+            var r = fs ? evaluate(p, answers(fs), plzEl.value.trim(), CONFIG) : { state: 'offen', lines: [], reasons: [], hints: [] };
+            last = r;
+            render(p, r);
+            var sum = r.lines.reduce(function (s, l) { return s + l.price; }, 0);
+            var fest = r.state === 'festpreis';
+            document.getElementById('f-ergebnis').value = fest ? 'FESTPREIS' : (r.state === 'individuell' ? 'INDIVIDUELL' : '');
+            document.getElementById('f-festpreis').value = fest ? eur(sum) : '–';
+            document.getElementById('f-positionen').value = fest ? r.lines.map(function (l) { return l.pos + ' (' + eur(l.price) + ')'; }).join(' + ') : '–';
+            document.getElementById('f-hinweise').value = (r.reasons || []).concat(r.hints || []).join(' | ') || '–';
+            document.getElementById('f-subject').value = (fest ? 'Festpreis ' + eur(sum) : 'Individuell') + ': ' + (TITEL[p] || 'Anfrage') + ' – ' + plzEl.value.trim() + ' ' + document.getElementById('f-ort').value.trim();
+        }
+
+        resultEl.addEventListener('click', function (e) {
+            var t = e.target.closest('[data-switch]');
+            if (!t) return;
+            var k = t.getAttribute('data-switch');
+            for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].getAttribute('data-k') === k) sel.selectedIndex = i; }
+            showProduct();
+            sel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        sel.addEventListener('change', showProduct);
+        form.addEventListener('input', update);
+        form.addEventListener('change', update);
+
+        form.addEventListener('submit', function (e) {
+            update();
+            if (!last || last.state === 'offen' || !form.checkValidity()) {
+                e.preventDefault();
+                errEl.hidden = false;
+                form.reportValidity();
+                return;
+            }
+            errEl.hidden = true;
+            btn.textContent = 'Wird gesendet …';
+            btn.disabled = true;
+        });
+
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('success') === 'true') {
+            form.hidden = true;
+            document.getElementById('successMessage').hidden = false;
+            return;
+        }
+        document.getElementById('f-quelle').value = (params.get('quelle') || '').slice(0, 60) || '–';
+        var pre = params.get('leistung');
+        if (pre) { for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].getAttribute('data-k') === pre) sel.selectedIndex = i; } }
+        showProduct();
+    })();
+    </script>
+    <script data-goatcounter="https://energie-hellmann.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+</body>
+
+</html>
