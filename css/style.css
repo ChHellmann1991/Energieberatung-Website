@@ -559,6 +559,7 @@ p {
 .price-box__row {
   display: flex;
   justify-content: space-between;
+  gap: var(--spacing-sm);
   padding: var(--spacing-sm) 0;
   border-bottom: 1px solid var(--color-gray-200);
 }
@@ -569,6 +570,10 @@ p {
   font-weight: 700;
   font-size: var(--font-size-lg);
   color: var(--color-primary);
+}
+
+.price-box__row > span:last-child {
+  text-align: right;
 }
 
 .price-box__row--discount {
@@ -925,10 +930,6 @@ p {
     flex-direction: column;
   }
   
-  .price-box {
-    margin: 0 calc(-1 * var(--spacing-md));
-    border-radius: 0;
-  }
 }
 
 /* Dena & GIH Logo Styles */
