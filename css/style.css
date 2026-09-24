@@ -324,6 +324,11 @@ p {
   font-size: var(--font-size-lg);
 }
 
+.btn--small {
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -558,7 +563,8 @@ p {
   border-bottom: 1px solid var(--color-gray-200);
 }
 
-.price-box__row:last-child {
+.price-box__row:last-child,
+.price-box__row--total {
   border-bottom: none;
   font-weight: 700;
   font-size: var(--font-size-lg);
@@ -573,6 +579,12 @@ p {
   padding: 0 var(--spacing-lg) var(--spacing-lg);
   font-size: var(--font-size-sm);
   color: var(--color-gray-600);
+}
+
+.price-box__cta {
+  max-width: 500px;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 /* Profile Section */
@@ -898,7 +910,8 @@ p {
     grid-template-columns: 1fr;
   }
   
-  .price-box {
+  .price-box,
+  .price-box__cta {
     max-width: 100%;
   }
 }
