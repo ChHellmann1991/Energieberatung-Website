@@ -393,15 +393,10 @@
                         <div class="form-group">
                             <label class="form-checkbox">
                                 <input type="checkbox" name="privacy" required>
-                                <span>Mir ist bekannt, dass dieses Formular über den Dienstleister Web3Forms
-                                    (Indien, Server in den USA) übermittelt wird und meine Daten dabei in Länder
-                                    ohne EU-Angemessenheitsbeschluss gelangen. In diese Übermittlung willige ich
-                                    ausdrücklich ein (Art. 49 Abs. 1 lit. a DSGVO). Einzelheiten und Risiken:
-                                    <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>. *</span>
+                                <span>Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a> zur Kenntnis genommen und stimme der dort beschriebenen Verarbeitung und Übermittlung meiner Angaben zur Bearbeitung meiner Anfrage zu. *</span>
                             </label>
                             <p class="form-help">
-                                Sie möchten das nicht? Schreiben Sie mir stattdessen an
-                                <a href="mailto:kontakt@energie-hellmann.de">kontakt@energie-hellmann.de</a>.
+                                Alternativ: <a href="mailto:kontakt@energie-hellmann.de" id="mailtoFallback" style="font-weight: 600; text-decoration: underline;">Ihre Angaben direkt im eigenen E-Mail-Programm öffnen →</a>
                             </p>
                         </div>
                         <button type="submit" class="btn btn--primary btn--large" id="submitBtn" style="width: 100%;">Festpreis-Angebot anfordern</button>
@@ -432,10 +427,13 @@
             <div>
                 <h4 class="footer__title">Navigation</h4>
                 <a href="index.html" class="footer__link">Start</a>
-                <a href="leistungen.html" class="footer__link">Leistungen</a>
+                <a href="leistungen.html" class="footer__link">Leistungen &amp; Preise</a>
+                <a href="energieausweis.html" class="footer__link">Energieausweis</a>
+                <a href="photovoltaik.html" class="footer__link">Photovoltaik-Prüfung</a>
                 <a href="referenzen.html" class="footer__link">Referenzen</a>
                 <a href="partner.html" class="footer__link">Für Handwerksbetriebe</a>
                 <a href="ueber-mich.html" class="footer__link">Über mich</a>
+                <a href="anfrage.html" class="footer__link">Festpreis-Rechner</a>
                 <a href="kontakt.html" class="footer__link">Kontakt</a>
             </div>
             <div>
@@ -664,7 +662,21 @@
             document.getElementById('f-festpreis').value = fest ? eur(sum) : '–';
             document.getElementById('f-positionen').value = fest ? r.lines.map(function (l) { return l.pos + ' (' + eur(l.price) + ')'; }).join(' + ') : '–';
             document.getElementById('f-hinweise').value = (r.reasons || []).concat(r.hints || []).join(' | ') || '–';
-            document.getElementById('f-subject').value = (fest ? 'Festpreis ' + eur(sum) : 'Individuell') + ': ' + (TITEL[p] || 'Anfrage') + ' – ' + plzEl.value.trim() + ' ' + document.getElementById('f-ort').value.trim();
+            var subj = (fest ? 'Festpreis ' + eur(sum) : 'Individuell') + ': ' + (TITEL[p] || 'Anfrage') + ' – ' + plzEl.value.trim() + ' ' + document.getElementById('f-ort').value.trim();
+            document.getElementById('f-subject').value = subj;
+            var mailtoEl = document.getElementById('mailtoFallback');
+            if (mailtoEl && fs) {
+                var bodyLines = ['Guten Tag Herr Hellmann,', '', 'ich bitte um ein Angebot zu folgenden Eckdaten:', '', 'Leistung: ' + (sel.value || ''), 'Objekt-Ort: ' + plzEl.value.trim() + ' ' + document.getElementById('f-ort').value.trim()];
+                fs.querySelectorAll('[data-q]').forEach(function (el) {
+                    var val = el.type === 'checkbox' ? (el.checked ? 'Ja' : '') : el.value;
+                    if (val) bodyLines.push((el.name || el.getAttribute('data-q')) + ': ' + val);
+                });
+                if (fest) bodyLines.push('Berechneter Festpreis: ' + eur(sum));
+                var msgVal = (document.getElementById('f-message') && document.getElementById('f-message').value.trim()) || '';
+                if (msgVal) bodyLines.push('', 'Anmerkungen: ' + msgVal);
+                bodyLines.push('', 'Viele Grüße', (document.getElementById('f-name') && document.getElementById('f-name').value.trim()) || '');
+                mailtoEl.href = 'mailto:kontakt@energie-hellmann.de?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+            }
         }
 
         resultEl.addEventListener('click', function (e) {

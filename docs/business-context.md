@@ -16,7 +16,7 @@ Stabile Business-Fakten für die Arbeit an der Website. Konkrete Förderdetails,
 - **iSFP-Erstellung** (Ein-/Zweifamilienhaus und Mehrfamilienhaus ab 3 WE), BAFA-gefördert
 - **Fachplanung & Baubegleitung** für Gebäudehülle (Dämmung, Fenster, Dach), BEG-förderfähig, nach Stundensatz
 - **Einzelleistungen:** Heizlastberechnung, hydraulischer Abgleich, Lüftungskonzept (DIN 1946-6), Förderservice (BAFA/KfW) pro Antrag
-- **§ 35c EStG-Bescheinigungen** (Steuerbonus Sanierung) — wird angeboten, steht aber noch nicht auf der Website (Content-Lücke)
+- **§ 35c EStG-Bescheinigungen** (Steuerbonus Sanierung) — Preis auf Anfrage (abhängig von Objekt und Art der Ausführung)
 - Hinweis: Thermografie/Wärmebildkamera ist **Arbeitsmittel** beim Aufmaß, keine eigenständige buchbare Leistung
 - Aktuelle Preise: siehe leistungen.html (nicht hier duplizieren)
 
