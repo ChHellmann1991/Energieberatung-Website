@@ -14,7 +14,7 @@ Stabile Business-Fakten für die Arbeit an der Website. Konkrete Förderdetails,
 
 - **Heizungstausch-Paket („Paket A", meistgebucht):** raumweise Heizlastberechnung (DIN EN 12831) + hydraulischer Abgleich (Verfahren B) + KfW-Förderservice (Bestätigung zum Antrag, Antragsbegleitung)
 - **iSFP-Erstellung** (Ein-/Zweifamilienhaus und Mehrfamilienhaus ab 3 WE), BAFA-gefördert
-- **Fachplanung & Baubegleitung** für Gebäudehülle (Dämmung, Fenster, Dach), BEG-förderfähig, nach Stundensatz
+- **Fachplanung & Baubegleitung** für Gebäudehülle (Dämmung, Fenster, Dach) inkl. Technischer Projektbeschreibung (TPB) und Technischem Projektnachweis (TPN), BEG-förderfähig, modulare Festpreise
 - **Einzelleistungen:** Heizlastberechnung, hydraulischer Abgleich, Lüftungskonzept (DIN 1946-6), Förderservice (BAFA/KfW) pro Antrag
 - **§ 35c EStG-Bescheinigungen** (Steuerbonus Sanierung) — Preis auf Anfrage (abhängig von Objekt und Art der Ausführung)
 - Hinweis: Thermografie/Wärmebildkamera ist **Arbeitsmittel** beim Aufmaß, keine eigenständige buchbare Leistung

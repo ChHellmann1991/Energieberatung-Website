@@ -44,7 +44,7 @@ robots.txt, sitemap.xml, google*.html   SEO / Search Console
 ## Ton & Sprache
 
 - Deutsch, Sie-Form, seriös und kompetent, kein Marketing-Sprech.
-- Fachbegriffe korrekt und konsistent: iSFP, Heizlastberechnung nach DIN EN 12831 (raumweise), hydraulischer Abgleich nach Verfahren B, Lüftungskonzept nach DIN 1946-6, Bestätigung zum Antrag (BzA), BEG, Energieeffizienz-Experte (EEE).
+- Fachbegriffe korrekt und konsistent: iSFP, Heizlastberechnung nach DIN EN 12831 (raumweise), hydraulischer Abgleich nach Verfahren B, Lüftungskonzept nach DIN 1946-6, Bestätigung zum Antrag (BzA), Bestätigung nach Durchführung (BnD), Technische Projektbeschreibung (TPB), Technischer Projektnachweis (TPN), BEG, Energieeffizienz-Experte (EEE).
 - Antwortzeit einheitlich: „in der Regel innerhalb eines Werktags" (nicht „24 Stunden").
 - Preishinweis einheitlich: „Alle Preise als Kleinunternehmer nach § 19 UStG – es fällt keine Umsatzsteuer an."
 
